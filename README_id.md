@@ -3,17 +3,17 @@ N.B.: README ini dibuat secara otomatis oleh <https://github.com/YunoHost/apps/t
 Ini TIDAK boleh diedit dengan tangan.
 -->
 
-# prose untuk YunoHost
+# Prose untuk YunoHost
 
-[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/Prose)](https://ci-apps.yunohost.org/ci/apps/Prose/)
-![Status kerja](https://apps.yunohost.org/badge/state/Prose)
-![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/Prose)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/prose)](https://ci-apps.yunohost.org/ci/apps/prose/)
+![Status kerja](https://apps.yunohost.org/badge/state/prose)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/prose)
 
-[![Pasang prose dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=Prose)
+[![Pasang Prose dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=prose)
 
 *[Baca README ini dengan bahasa yang lain.](./ALL_README.md)*
 
-> *Paket ini memperbolehkan Anda untuk memasang prose secara cepat dan mudah pada server YunoHost.*  
+> *Paket ini memperbolehkan Anda untuk memasang Prose secara cepat dan mudah pada server YunoHost.*  
 > *Bila Anda tidak mempunyai YunoHost, silakan berkonsultasi dengan [panduan](https://yunohost.org/install) untuk mempelajari bagaimana untuk memasangnya.*
 
 ## Ringkasan
@@ -24,25 +24,25 @@ Prose Web application. XMPP client for team messaging.
 
 ## Tangkapan Layar
 
-![Tangkapan Layar pada prose](./doc/screenshots/screenshot.jpg)
+![Tangkapan Layar pada Prose](./doc/screenshots/screenshot.jpg)
 
 ## Dokumentasi dan sumber daya
 
 - Website aplikasi resmi: <https://prose.org/>
 - Depot kode aplikasi hulu: <https://github.com/prose-im/prose-app-web>
-- Gudang YunoHost: <https://apps.yunohost.org/app/Prose>
-- Laporkan bug: <https://github.com/YunoHost-Apps/Prose_ynh/issues>
+- Gudang YunoHost: <https://apps.yunohost.org/app/prose>
+- Laporkan bug: <https://github.com/YunoHost-Apps/prose_ynh/issues>
 
 ## Info developer
 
-Silakan kirim pull request ke [`testing` branch](https://github.com/YunoHost-Apps/Prose_ynh/tree/testing).
+Silakan kirim pull request ke [`testing` branch](https://github.com/YunoHost-Apps/prose_ynh/tree/testing).
 
 Untuk mencoba branch `testing`, silakan dilanjutkan seperti:
 
 ```bash
-sudo yunohost app install https://github.com/YunoHost-Apps/Prose_ynh/tree/testing --debug
+sudo yunohost app install https://github.com/YunoHost-Apps/prose_ynh/tree/testing --debug
 atau
-sudo yunohost app upgrade Prose -u https://github.com/YunoHost-Apps/Prose_ynh/tree/testing --debug
+sudo yunohost app upgrade prose -u https://github.com/YunoHost-Apps/prose_ynh/tree/testing --debug
 ```
 
 **Info lebih lanjut mengenai pemaketan aplikasi:** <https://yunohost.org/packaging_apps>

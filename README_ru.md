@@ -3,17 +3,17 @@
 Он НЕ ДОЛЖЕН редактироваться вручную.
 -->
 
-# prose для YunoHost
+# Prose для YunoHost
 
-[![Уровень интеграции](https://apps.yunohost.org/badge/integration/Prose)](https://ci-apps.yunohost.org/ci/apps/Prose/)
-![Состояние работы](https://apps.yunohost.org/badge/state/Prose)
-![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/Prose)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/prose)](https://ci-apps.yunohost.org/ci/apps/prose/)
+![Состояние работы](https://apps.yunohost.org/badge/state/prose)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/prose)
 
-[![Установите prose с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=Prose)
+[![Установите Prose с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=prose)
 
 *[Прочтите этот README на других языках.](./ALL_README.md)*
 
-> *Этот пакет позволяет Вам установить prose быстро и просто на YunoHost-сервер.*  
+> *Этот пакет позволяет Вам установить Prose быстро и просто на YunoHost-сервер.*  
 > *Если у Вас нет YunoHost, пожалуйста, посмотрите [инструкцию](https://yunohost.org/install), чтобы узнать, как установить его.*
 
 ## Обзор
@@ -24,25 +24,25 @@ Prose Web application. XMPP client for team messaging.
 
 ## Снимки экрана
 
-![Снимок экрана prose](./doc/screenshots/screenshot.jpg)
+![Снимок экрана Prose](./doc/screenshots/screenshot.jpg)
 
 ## Документация и ресурсы
 
 - Официальный веб-сайт приложения: <https://prose.org/>
 - Репозиторий кода главной ветки приложения: <https://github.com/prose-im/prose-app-web>
-- Магазин YunoHost: <https://apps.yunohost.org/app/Prose>
-- Сообщите об ошибке: <https://github.com/YunoHost-Apps/Prose_ynh/issues>
+- Магазин YunoHost: <https://apps.yunohost.org/app/prose>
+- Сообщите об ошибке: <https://github.com/YunoHost-Apps/prose_ynh/issues>
 
 ## Информация для разработчиков
 
-Пришлите Ваш запрос на слияние в [ветку `testing`](https://github.com/YunoHost-Apps/Prose_ynh/tree/testing).
+Пришлите Ваш запрос на слияние в [ветку `testing`](https://github.com/YunoHost-Apps/prose_ynh/tree/testing).
 
 Чтобы попробовать ветку `testing`, пожалуйста, сделайте что-то вроде этого:
 
 ```bash
-sudo yunohost app install https://github.com/YunoHost-Apps/Prose_ynh/tree/testing --debug
+sudo yunohost app install https://github.com/YunoHost-Apps/prose_ynh/tree/testing --debug
 или
-sudo yunohost app upgrade Prose -u https://github.com/YunoHost-Apps/Prose_ynh/tree/testing --debug
+sudo yunohost app upgrade prose -u https://github.com/YunoHost-Apps/prose_ynh/tree/testing --debug
 ```
 
 **Больше информации о пакетировании приложений:** <https://yunohost.org/packaging_apps>
