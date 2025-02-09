@@ -18,8 +18,7 @@ No se debe editar a mano.
 
 ## Descripción general
 
-This is a dummy description of this app features
-
+Prose Web application. XMPP client for team messaging.
 
 **Versión actual:** 0.5.4~ynh1
 

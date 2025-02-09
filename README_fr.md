@@ -18,8 +18,7 @@ Il NE doit PAS être modifié à la main.
 
 ## Vue d’ensemble
 
-Ceci est une fausse description des fonctionalités de l'app
-
+Application Web Prose. Client XMPP pour messagerie d'équipe.
 
 **Version incluse :** 0.5.4~ynh1
 

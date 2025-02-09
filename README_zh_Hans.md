@@ -18,8 +18,7 @@
 
 ## 概况
 
-This is a dummy description of this app features
-
+Prose Web application. XMPP client for team messaging.
 
 **分发版本：** 0.5.4~ynh1
 
