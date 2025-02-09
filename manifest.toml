@@ -2,8 +2,8 @@
 
 packaging_format = 2
 
-id = "Prose"
-name = "prose"
+id = "prose"
+name = "Prose"
 description.en = "XMPP client for team messaging"
 description.fr = "Client XMPP pour messagerie d'équipe"
 
