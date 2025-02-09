@@ -1,1 +1,1 @@
-Ceci est une fausse description des fonctionalités de l'app
+Application Web Prose. Client XMPP pour messagerie d'équipe.

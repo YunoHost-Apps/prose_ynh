@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+Prose Web application. XMPP client for team messaging.
