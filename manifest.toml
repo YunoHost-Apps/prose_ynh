@@ -1,0 +1,60 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "Prose"
+name = "prose"
+description.en = "XMPP client for team messaging"
+description.fr = "Client XMPP pour la messagerie d'équipe"
+
+version = "0.5.4~ynh1"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "MPL-2.0"
+website = "https://prose.org/"
+code = "https://github.com/prose-im/prose-app-web"
+
+[integration]
+yunohost = ">= 12.0.9"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/prose"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+    [resources.sources]
+
+    [resources.sources.main]
+    url = "https://github.com/prose-im/prose-app-web/releases/download/0.5.4/release-0.5.4.tar.gz"
+    sha256 = "8f0f90649a4c18193e6ec4f9b1805e5f9f1be60e89973183a64ba80dff0dc573"
+
+    autoupdate.strategy = "latest_github_tag"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+    group = "www-data:r-x"
+
+    [resources.permissions]
+    main.url = "/"
