@@ -20,7 +20,7 @@
 
 Prose Web application. XMPP client for team messaging.
 
-**分发版本：** 0.5.4~ynh1
+**分发版本：** 0.6.1~ynh1
 
 ## 截图
 
