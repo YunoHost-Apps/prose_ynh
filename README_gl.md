@@ -20,7 +20,7 @@ NON debe editarse manualmente.
 
 Prose Web application. XMPP client for team messaging.
 
-**Versión proporcionada:** 0.6.1~ynh1
+**Versión proporcionada:** 0.6.2~ynh1
 
 ## Capturas de pantalla
 
