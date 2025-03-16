@@ -34,6 +34,9 @@ pushd "$install_dir"
  	ynh_hide_warnings ynh_exec_as_app npm run build
 popd
 
+# Set correct rights on build dir
+chgrp -R www-data $install_dir/dist/
+
 #=================================================
 # END OF SCRIPT
 #=================================================
