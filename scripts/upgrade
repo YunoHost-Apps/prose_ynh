@@ -4,11 +4,11 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# STOP SYSTEMD SERVICE
+# INSTALL DEPENDENCIES
 #=================================================
-ynh_script_progression "Stopping $app's systemd service..."
+ynh_script_progression "Installing dependencies..."
 
-ynh_systemctl --service="$app" --action="stop"
+ynh_nodejs_install
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -16,6 +16,16 @@ ynh_systemctl --service="$app" --action="stop"
 ynh_script_progression "Upgrading source files..."
 
 ynh_setup_source --dest_dir="$install_dir" --full_replace
+
+#=================================================
+# INSTALL DODOC
+#=================================================
+ynh_script_progression "Installing $app..."
+
+pushd "$install_dir"
+ 	ynh_hide_warnings ynh_exec_as_app npm install
+ 	ynh_hide_warnings ynh_exec_as_app npm run build
+popd
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
