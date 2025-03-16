@@ -4,6 +4,13 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
+# INSTALL DEPENDENCIES
+#=================================================
+ynh_script_progression "Installing dependencies..."
+
+ynh_nodejs_install
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Setting up source files..."
@@ -16,6 +23,20 @@ ynh_setup_source --dest_dir="$install_dir"
 ynh_script_progression "Adding system configurations related to $app..."
 
 ynh_config_add_nginx
+
+ynh_config_add_systemd
+
+yunohost service add "$app" --description="XMPP client for team messaging" --log="/var/log/$app/$app.log"
+
+#=================================================
+# INSTALL PROSE
+#=================================================
+ynh_script_progression "Installing the app..."
+
+pushd "$install_dir"
+ 	ynh_hide_warnings ynh_exec_as_app npm install
+ 	ynh_hide_warnings ynh_exec_as_app npm run build
+popd
 
 #=================================================
 # END OF SCRIPT

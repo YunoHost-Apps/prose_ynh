@@ -11,6 +11,13 @@ ynh_script_progression "Stopping $app's systemd service..."
 ynh_systemctl --service="$app" --action="stop"
 
 #=================================================
+# INSTALL DEPENDENCIES
+#=================================================
+ynh_script_progression "Installing dependencies..."
+
+ynh_nodejs_install
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Upgrading source files..."
@@ -18,11 +25,24 @@ ynh_script_progression "Upgrading source files..."
 ynh_setup_source --dest_dir="$install_dir" --full_replace
 
 #=================================================
+# INSTALL DODOC
+#=================================================
+ynh_script_progression "Installing $app..."
+
+pushd "$install_dir"
+ 	ynh_hide_warnings ynh_exec_as_app npm install
+popd
+
+#=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
 #=================================================
 ynh_script_progression "Upgrading system configurations related to $app..."
 
 ynh_config_add_nginx
+
+ynh_config_add_systemd
+
+yunohost service add "$app" --description="XMPP client for team messaging" --log="/var/log/$app/$app.log"
 
 #=================================================
 # END OF SCRIPT
