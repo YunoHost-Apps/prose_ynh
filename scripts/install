@@ -24,10 +24,6 @@ ynh_script_progression "Adding system configurations related to $app..."
 
 ynh_config_add_nginx
 
-ynh_config_add_systemd
-
-yunohost service add "$app" --description="XMPP client for team messaging" --log="/var/log/$app/$app.log"
-
 #=================================================
 # INSTALL PROSE
 #=================================================

@@ -4,13 +4,6 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# STOP SYSTEMD SERVICE
-#=================================================
-ynh_script_progression "Stopping $app's systemd service..."
-
-ynh_systemctl --service="$app" --action="stop"
-
-#=================================================
 # INSTALL DEPENDENCIES
 #=================================================
 ynh_script_progression "Installing dependencies..."
@@ -40,10 +33,6 @@ popd
 ynh_script_progression "Upgrading system configurations related to $app..."
 
 ynh_config_add_nginx
-
-ynh_config_add_systemd
-
-yunohost service add "$app" --description="XMPP client for team messaging" --log="/var/log/$app/$app.log"
 
 #=================================================
 # END OF SCRIPT
