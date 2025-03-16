@@ -7,7 +7,7 @@ name = "Prose"
 description.en = "XMPP client for team messaging"
 description.fr = "Client XMPP pour messagerie d'équipe"
 
-version = "0.6.2~ynh1"
+version = "0.6.2~ynh2"
 
 maintainers = ["eric_G"]
 
