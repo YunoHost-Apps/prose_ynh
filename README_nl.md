@@ -20,6 +20,7 @@ Hij mag NIET handmatig aangepast worden.
 
 Prose Web application. XMPP client for team messaging.
 
+
 **Geleverde versie:** 0.7.0~ynh1
 
 ## Schermafdrukken

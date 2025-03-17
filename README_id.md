@@ -20,6 +20,7 @@ Ini TIDAK boleh diedit dengan tangan.
 
 Prose Web application. XMPP client for team messaging.
 
+
 **Versi terkirim:** 0.7.0~ynh1
 
 ## Tangkapan Layar

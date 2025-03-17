@@ -20,6 +20,7 @@ EZ editatu eskuz.
 
 Prose Web application. XMPP client for team messaging.
 
+
 **Paketatutako bertsioa:** 0.7.0~ynh1
 
 ## Pantaila-argazkiak
