@@ -20,7 +20,8 @@ Il NE doit PAS être modifié à la main.
 
 Application Web Prose. Client XMPP pour messagerie d'équipe.
 
-**Version incluse :** 0.6.2~ynh2
+
+**Version incluse :** 0.7.0~ynh1
 
 ## Captures d’écran
 
