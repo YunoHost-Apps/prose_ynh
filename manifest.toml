@@ -7,7 +7,7 @@ name = "Prose"
 description.en = "XMPP client for team messaging"
 description.fr = "Client XMPP pour messagerie d'équipe"
 
-version = "0.8.2~ynh1"
+version = "0.8.3~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -43,8 +43,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/prose-im/prose-app-web/archive/refs/tags/0.8.2.tar.gz"
-    sha256 = "2792eafb7fddc4c5dc346f88214593cad1da411af1440c49a64281629127d897"
+    url = "https://github.com/prose-im/prose-app-web/archive/refs/tags/0.8.3.tar.gz"
+    sha256 = "12ed469f92d3225bb7097175a948f6335f8243baf406fcbde77415ac6c59ce1c"
 
     autoupdate.strategy = "latest_github_tag"
 
