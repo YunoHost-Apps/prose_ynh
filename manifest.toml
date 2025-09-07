@@ -7,7 +7,7 @@ name = "Prose"
 description.en = "XMPP client for team messaging"
 description.fr = "Client XMPP pour messagerie d'équipe"
 
-version = "0.12.1~ynh1"
+version = "0.12.1~ynh2"
 
 maintainers = ["eric_G"]
 
@@ -17,7 +17,7 @@ website = "https://prose.org/"
 code = "https://github.com/prose-im/prose-app-web"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -56,3 +56,6 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.ports]
+
+    [resources.nodejs]
+    version = "22"
