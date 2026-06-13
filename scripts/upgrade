@@ -23,7 +23,7 @@ pushd "$install_dir"
  	ynh_hide_warnings ynh_exec_as_app npm run build
 popd
 
-chown -R $app:www-data /var/www/prose/
+chown -R $app:www-data $install_dir
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS

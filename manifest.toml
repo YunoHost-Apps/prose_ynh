@@ -17,7 +17,7 @@ website = "https://prose.org/"
 code = "https://github.com/prose-im/prose-app-web"
 
 [integration]
-yunohost = ">= 12.1.17"
+yunohost = ">= 12.1.39"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -44,7 +44,6 @@ ram.runtime = "50M"
     [resources.sources.main]
     url = "https://github.com/prose-im/prose-app-web/archive/refs/tags/0.14.1.tar.gz"
     sha256 = "5c8b63dd0eaf40af1345c01899740f615b4a5f2d628b7996bb2dd3f1ac1ea3f2"
-
     autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
